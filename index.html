@@ -16,50 +16,106 @@
     </button>
     <audio id="bgMusic" src="aset/Christina Perri - A Thousand Years [Official Music Video].mp3" loop></audio>
   </div>
-  <!-- SVG Daun & Bunga -->
-  <div class="svg-bg">
-    <!-- Kiri Atas -->
-    <svg class="svg-top-left" viewBox="0 0 200 200">
-      <!-- Daun hijau -->
-      <g>
-        <ellipse cx="40" cy="40" rx="30" ry="15" fill="#A7C8A0" />
-        <ellipse cx="80" cy="60" rx="20" ry="10" fill="#7BAE7F" />
-        <ellipse cx="60" cy="90" rx="15" ry="8" fill="#A7C8A0" />
-        <!-- Tambahkan lebih banyak daun sesuai kebutuhan -->
-      </g>
-    </svg>
-    <!-- Kanan Bawah -->
-    <svg class="svg-bottom-right" viewBox="0 0 200 200">
-      <g>
-        <ellipse cx="160" cy="160" rx="30" ry="15" fill="#A7C8A0" />
-        <ellipse cx="120" cy="180" rx="20" ry="10" fill="#7BAE7F" />
-        <ellipse cx="140" cy="130" rx="15" ry="8" fill="#A7C8A0" />
-      </g>
-    </svg>
-    <!-- Kiri Bawah (Bunga Kuning) -->
-    <svg class="svg-bottom-left" viewBox="0 0 200 200">
-      <g>
-        <ellipse cx="50" cy="170" rx="40" ry="20" fill="#F7E3A0" />
-        <ellipse cx="80" cy="180" rx="30" ry="15" fill="#F7E3A0" />
-        <ellipse cx="60" cy="150" rx="25" ry="12" fill="#F7E3A0" />
-      </g>
-    </svg>
+  <div class="main-portrait-wrapper" id="mainScroll">
+    <section id="opening">
+      <!-- Opening section content from opening.html -->
+      <div class="svg-bg">
+        <!-- Kiri Atas -->
+        <svg class="svg-top-left" viewBox="0 0 200 200">
+          <!-- Daun hijau -->
+          <g>
+            <ellipse cx="40" cy="40" rx="30" ry="15" fill="#A7C8A0" />
+            <ellipse cx="80" cy="60" rx="20" ry="10" fill="#7BAE7F" />
+            <ellipse cx="60" cy="90" rx="15" ry="8" fill="#A7C8A0" />
+            <!-- Tambahkan lebih banyak daun sesuai kebutuhan -->
+          </g>
+        </svg>
+        <!-- Kanan Bawah -->
+        <svg class="svg-bottom-right" viewBox="0 0 200 200">
+          <g>
+            <ellipse cx="160" cy="160" rx="30" ry="15" fill="#A7C8A0" />
+            <ellipse cx="120" cy="180" rx="20" ry="10" fill="#7BAE7F" />
+            <ellipse cx="140" cy="130" rx="15" ry="8" fill="#A7C8A0" />
+          </g>
+        </svg>
+        <!-- Kiri Bawah (Bunga Kuning) -->
+        <svg class="svg-bottom-left" viewBox="0 0 200 200">
+          <g>
+            <ellipse cx="50" cy="170" rx="40" ry="20" fill="#F7E3A0" />
+            <ellipse cx="80" cy="180" rx="30" ry="15" fill="#F7E3A0" />
+            <ellipse cx="60" cy="150" rx="25" ry="12" fill="#F7E3A0" />
+          </g>
+        </svg>
+      </div>
+      <div class="invitation">
+        <div class="initials">KAMI</div>
+        <div class="names">Aji & Vina</div>
+        <div class="save-date">
+          <div>Save The Date</div>
+          <div class="date">14.07.2025</div>
+        </div>
+        <div class="to">
+          <div>Kepada Yth</div>
+          <div>Bapak/Ibu/Saudara/i</div>
+          <div class="guest-name">Partner-partner sekalian</div>
+        </div>
+        <a class="open-invite" href="opening.html" id="openInviteBtn">Buka Undangan</a><br>
+      </div>
+    </section>
+    <section id="quotes">
+      <!-- Quotes section content from quotes.html -->
+      ...
+    </section>
+    <section id="mempelai">
+      <!-- Mempelai section content from mempelai.html -->
+      ...
+    </section>
+    <section id="akad">
+      <!-- Akad section content from akad.html -->
+      ...
+    </section>
+    <section id="resepsi">
+      <!-- Resepsi section content from resepsi.html -->
+      ...
+    </section>
+    <section id="maps">
+      <!-- Maps section content from maps.html -->
+      ...
+    </section>
+    <section id="galery">
+      <!-- Galery section content from galery.html -->
+      ...
+    </section>
+    <section id="countdown">
+      <!-- Countdown section content from countdown.html -->
+      ...
+    </section>
+    <section id="ucapan">
+      <!-- Ucapan section content from ucapan.html -->
+      ...
+    </section>
+    <section id="gift">
+      <!-- Gift section content from gift.html -->
+      ...
+    </section>
+    <section id="thanks">
+      <!-- Thanks section content from thanks.html -->
+      ...
+    </section>
   </div>
-  <!-- Isi Undangan -->
-  <div class="invitation">
-    <div class="initials">KAMI</div>
-    <div class="names">Aji & Vina</div>
-    <div class="save-date">
-      <div>Save The Date</div>
-      <div class="date">14.07.2025</div>
-    </div>
-    <div class="to">
-      <div>Kepada Yth</div>
-      <div>Bapak/Ibu/Saudara/i</div>
-      <div class="guest-name">Partner-partner sekalian</div>
-    </div>
-    <a class="open-invite" href="opening.html" id="openInviteBtn">Buka Undangan</a><br>
-  </div>
+  <nav class="nav-menu">
+    <a class="nav-item" data-target="opening"><span class="icon">...</span><span>Opening</span></a>
+    <a class="nav-item" data-target="quotes"><span class="icon">...</span><span>Quotes</span></a>
+    <a class="nav-item" data-target="mempelai"><span class="icon">...</span><span>Mempelai</span></a>
+    <a class="nav-item" data-target="akad"><span class="icon">...</span><span>Akad</span></a>
+    <a class="nav-item" data-target="resepsi"><span class="icon">...</span><span>Resepsi</span></a>
+    <a class="nav-item" data-target="maps"><span class="icon">...</span><span>Maps</span></a>
+    <a class="nav-item" data-target="galery"><span class="icon">...</span><span>Gallery</span></a>
+    <a class="nav-item" data-target="countdown"><span class="icon">...</span><span>Countdown</span></a>
+    <a class="nav-item" data-target="ucapan"><span class="icon">...</span><span>Ucapan</span></a>
+    <a class="nav-item" data-target="gift"><span class="icon">...</span><span>Gift</span></a>
+    <a class="nav-item" data-target="thanks"><span class="icon">...</span><span>Thanks</span></a>
+  </nav>
   <script src="script.js"></script>
 </body>
 </html>
