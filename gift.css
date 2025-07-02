@@ -251,6 +251,19 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
   opacity: 0;
   transition: opacity 1s;
 }
