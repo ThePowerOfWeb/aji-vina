@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+body.page-loaded {
+  opacity: 1;
+}
+
+.countdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  padding-top: 40px;
+  flex: 1;
+  gap: 24px;
+  margin: 0;
+}
+
+.countdown-title {
+  font-family: 'Montserrat', serif;
+  font-size: 2.2rem;
+  color: #7A4B3A;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-box {
+  background: #7A4B3A;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 18px 10px 18px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-box span {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.countdown-box div {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .countdown-title {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  .countdown-timer {
+    gap: 8px;
+  }
+  .countdown-box {
+    min-width: 54px;
+    padding: 10px 6px 6px 6px;
+    font-size: 1rem;
+  }
+}
+
+/* Tambahkan/sinkronkan navbar style dari gift.css */
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -2px 16px rgba(90,140,106,0.08);
+  padding: 16px 18px 8px 18px;
+  margin: 32px auto 0 auto;
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #7BAE7F;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 16px;
+  transition: background 0.2s, color 0.2s;
+  padding: 6px 8px 4px 8px;
+  gap: 2px;
+  background: transparent;
+}
+
+.nav-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+  color: #7BAE7F;
+  transition: color 0.2s;
+}
+
+.nav-item.active, .nav-item:hover {
+  background: #7BAE7F;
+  color: #fff;
+}
+
+.nav-item.active .icon, .nav-item:hover .icon {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .nav-menu {
+    max-width: 100vw;
+    gap: 6px;
+    padding: 10px 2px 4px 2px;
+  }
+  .nav-item {
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 0.85rem;
+    padding: 4px 2px 2px 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px 0 2px 0;
+    border-radius: 16px 16px 0 0;
+  }
+  .nav-item {
+    min-width: 38px;
+    min-height: 38px;
+    font-size: 0.8rem;
+    padding: 2px 0 2px 0;
+    margin: 0 2px;
+  }
+}
+
+.svg-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.svg-top-left {
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  z-index: 0;
+}
+
+.svg-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 250px;
+}
+
+.svg-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.svg-torii {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 110px;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.svg-sakura {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 140px;
+  height: 210px;
+  z-index: 0;
+  opacity: 0.92;
+}
+
+@media (max-width: 600px) {
+  .svg-torii {
+    width: 220px;
+    height: 60px;
+  }
+  .svg-sakura {
+    width: 80px;
+    height: 120px;
+  }
+} 

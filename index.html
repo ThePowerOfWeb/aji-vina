@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="music-control" id="musicControl">
+    <button id="musicBtn" aria-label="Play music">
+      <!-- Play SVG -->
+      <svg id="iconPlay" width="32" height="32" viewBox="0 0 24 24" fill="none" style="display:inline;"><circle cx="12" cy="12" r="12" fill="#E2B13C"/><polygon points="9,7 19,12 9,17" fill="#fff"/></svg>
+      <!-- Stop SVG -->
+      <svg id="iconStop" width="32" height="32" viewBox="0 0 24 24" fill="none" style="display:none;"><circle cx="12" cy="12" r="12" fill="#E2B13C"/><rect x="8" y="8" width="8" height="8" rx="2" fill="#fff"/></svg>
+    </button>
+    <audio id="bgMusic" src="aset/Christina Perri - A Thousand Years [Official Music Video].mp3" loop></audio>
+  </div>
+  <!-- SVG Daun & Bunga -->
+  <div class="svg-bg">
+    <!-- Kiri Atas -->
+    <svg class="svg-top-left" viewBox="0 0 200 200">
+      <!-- Daun hijau -->
+      <g>
+        <ellipse cx="40" cy="40" rx="30" ry="15" fill="#A7C8A0" />
+        <ellipse cx="80" cy="60" rx="20" ry="10" fill="#7BAE7F" />
+        <ellipse cx="60" cy="90" rx="15" ry="8" fill="#A7C8A0" />
+        <!-- Tambahkan lebih banyak daun sesuai kebutuhan -->
+      </g>
+    </svg>
+    <!-- Kanan Bawah -->
+    <svg class="svg-bottom-right" viewBox="0 0 200 200">
+      <g>
+        <ellipse cx="160" cy="160" rx="30" ry="15" fill="#A7C8A0" />
+        <ellipse cx="120" cy="180" rx="20" ry="10" fill="#7BAE7F" />
+        <ellipse cx="140" cy="130" rx="15" ry="8" fill="#A7C8A0" />
+      </g>
+    </svg>
+    <!-- Kiri Bawah (Bunga Kuning) -->
+    <svg class="svg-bottom-left" viewBox="0 0 200 200">
+      <g>
+        <ellipse cx="50" cy="170" rx="40" ry="20" fill="#F7E3A0" />
+        <ellipse cx="80" cy="180" rx="30" ry="15" fill="#F7E3A0" />
+        <ellipse cx="60" cy="150" rx="25" ry="12" fill="#F7E3A0" />
+      </g>
+    </svg>
+  </div>
+  <!-- Isi Undangan -->
+  <div class="invitation">
+    <div class="initials">KAMI</div>
+    <div class="names">Aji & Vina</div>
+    <div class="save-date">
+      <div>Save The Date</div>
+      <div class="date">14.07.2025</div>
+    </div>
+    <div class="to">
+      <div>Kepada Yth</div>
+      <div>Bapak/Ibu/Saudara/i</div>
+      <div class="guest-name">Partner-partner sekalian</div>
+    </div>
+    <a class="open-invite" href="opening.html" id="openInviteBtn">Buka Undangan</a><br>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

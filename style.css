@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .svg-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .svg-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .svg-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .invitation {
+    background: rgba(255,255,255,0.95);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 24px 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .initials {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5A8C6A;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  
+  .names {
+    font-family: 'Noto Sans JP', 'Montserrat', cursive;
+    font-size: 1.5rem;
+    color: #E2B13C;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  
+  .save-date {
+    color: #5A8C6A;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  
+  .save-date .date {
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    margin-top: 2px;
+  }
+  
+  .to {
+    color: #5A8C6A;
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+  
+  .guest-name {
+    color: #E2B13C;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 4px;
+  }
+  
+  .open-invite {
+    background: #5A8C6A;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+  }
+  
+  .open-invite:hover {
+    background: #3e6b4d;
+  }
+
+  body.fade-out {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .music-control {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+  }
+  .music-control button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(90,140,106,0.10);
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .music-control button:hover {
+    background: #f7e3a0;
+    box-shadow: 0 4px 16px rgba(90,140,106,0.18);
+  }
