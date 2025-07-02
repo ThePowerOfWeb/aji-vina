@@ -16,6 +16,10 @@ body {
   transition: opacity 1s;
 }
 
+body.page-loaded {
+  opacity: 1;
+}
+
 .mempelai-content {
   display: flex;
   flex-direction: column;

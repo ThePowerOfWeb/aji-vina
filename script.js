@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.add('fade-out');
       setTimeout(function() {
         window.location.href = openBtn.getAttribute('href');
-      }, 1000);
+      }, 500);
     });
   }
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('fade-out');
         setTimeout(function() {
           window.location.href = href;
-        }, 1000);
+        }, 500);
       });
     }
   });
